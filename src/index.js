@@ -50,8 +50,25 @@ let tech = [
   'Git',
   'Command Line Tools (Mac Terminal)'
 ];
+let work_samples = {
+  titles: [
+    'Community Coffee',
+    'Equinor - General Campaign',
+    'Equinor - Houston',
+    'AA - Microsite Tour'
+  ],
+  links: [
+    'http://www.ericposas.com/tm/COMMUNITYCOFFEE/MakeItCommunity1.0/conversion/',
+    'http://www.ericposas.com/tm/EQUINOR/Equinor-HADC/2.1.0/General/preview/index.html',
+    'http://www.ericposas.com/tm/EQUINOR/Equinor-HADC/2.1.0/Houston/preview/index.html',
+    'http://www.ericposas.com/Clients/AA/Microsites-Tour/tour.html'
+  ]
+};
 
-$('head').append(`<link href="style.css" rel="stylesheet">`);
+$('head').append(`
+  <title>Eric Posas, Front End Developer</title>
+  <link href="style.css" rel="stylesheet">
+`);
 $('body').append(`
   <h1>${header}</h1>
   <h2>${title}</h2>
@@ -61,10 +78,28 @@ $('body').append(`
   <h2>Tech</h2>
   ${add_tech()}
   <br>
+  <h2>Work Examples</h2>
+  ${add_work_samples()}
+  <br>
   <h2>Contact</h2>
-  <h4>Phone: 469 618 5223</h4>
-  <h4>Email: web_dev@tutanota.com</h4>
+  <p class="phone">Phone: 469 618 5223</p>
+  <p class="email">Email: web_dev@tutanota.com</p>
+  <br><br>
+  <br><br>
 `);
+
+function add_work_samples(){
+  var _work = ``;
+  work_samples.titles.forEach((item,i)=>{
+    _work += `
+      <h3 class="work">${work_samples.titles[i]}</h3>
+      <a href='${work_samples.links[i]}'>
+        <h5 class="link">${work_samples.links[i]}</h5>
+      </a>
+    `;
+  });
+  return _work;
+}
 
 function add_companies(){
   var _companies = ``;

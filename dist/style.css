@@ -3,10 +3,16 @@ html{
   font-family: 'Ubuntu';
   
 }
+a{
+  margin: 0 0 0 10px;
+  text-decoration: none;
+  color: #000;
+}
 p{
   margin: 10px 0 30px 10px;
 }
-.company{
+.company,
+.work{
   margin: 0 0 0 10px;
 }
 .year{
@@ -14,4 +20,11 @@ p{
 }
 .tech{
   margin: 10px 0 15px 10px;
+}
+.link{
+  margin: 0 0 20px 15px;
+}
+.email,
+.phone{
+  margin: 10px 0 0 10px;
 }

@@ -1,0 +1,17 @@
+html{
+  margin: 20px;
+  font-family: 'Ubuntu';
+  
+}
+p{
+  margin: 10px 0 30px 10px;
+}
+.company{
+  margin: 0 0 0 10px;
+}
+.year{
+  margin: 5px 0 0 10px;
+}
+.tech{
+  margin: 10px 0 15px 10px;
+}

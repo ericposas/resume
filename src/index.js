@@ -19,25 +19,21 @@ let aboutme = `
 let companies = [
   'TM Advertising',
   'Dieste, Inc.',
-  'DJNR Interactive',
   'Targetbase'
 ];
 let titles = [
   'Flash Developer',
   'Digital Developer',
-  'Contract',
   'Consultant'
 ];
 let year = [
   `2013 - 2015`,
   `2015 - 2017`,
-  `2017 - 2018`,
   `2017 - 2018`
 ];
 let company_descriptions = [
   `Started here as a Flash developer, developing interactive animated banner ads for web and video units for large outdoor displays. Client work included Discover Network, American Airlines, and Statoil.`,
   `Created custom html5/javascript animations and web banner units for Sizmek and DoubleClick Media campaigns. Utilized Greensock Animation Platform and Adobe Animate CC (formerly Flash) for most of the work done while employed under Dieste. Clients included AT&T, Miller, and Cricket Wireless.`,
-  `Worked with DJNR after going the freelancer route. Worked heavily with character animation within an html5 canvas setting. Complex animations were achieved with Adobe Animate CC, allowing for timeline animations and code to be mixed with standard javascript and DOM element overlays.`,
   `Worked with Targetbase as a consultant and helped guide them through one of their first few banner campaigns. I quickly produced all banners for them through the year and kept their production on schedule. Clients included pharma brands Anoro, Breo, and Trelegy.`
 ];
 let tech = [
@@ -54,14 +50,12 @@ let work_samples = {
   titles: [
     'Community Coffee',
     'Equinor - General Campaign',
-    'Equinor - Houston',
-    'AA - Microsite Tour'
+    'Equinor - Houston'
   ],
   links: [
     'http://www.ericposas.com/tm/COMMUNITYCOFFEE/MakeItCommunity1.0/conversion/',
     'http://www.ericposas.com/tm/EQUINOR/Equinor-HADC/2.1.0/General/preview/index.html',
-    'http://www.ericposas.com/tm/EQUINOR/Equinor-HADC/2.1.0/Houston/preview/index.html',
-    'http://www.ericposas.com/Clients/AA/Microsites-Tour/tour.html'
+    'http://www.ericposas.com/tm/EQUINOR/Equinor-HADC/2.1.0/Houston/preview/index.html'
   ]
 };
 
@@ -93,7 +87,7 @@ function add_work_samples(){
   work_samples.titles.forEach((item,i)=>{
     _work += `
       <h3 class="work">${work_samples.titles[i]}</h3>
-      <a href='${work_samples.links[i]}'>
+      <a href='${work_samples.links[i]}' target='_blank'>
         <h5 class="link">${work_samples.links[i]}</h5>
       </a>
     `;
